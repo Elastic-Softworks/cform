@@ -28,7 +28,7 @@ C-FORM is a code formatting guide that treats source code as a low-level textboo
 - Detailed comments explaining hardware interactions
 - Consistent uppercase comments for register operations
 
-## License
+## Licensing
 
 ```text
 This project is licensed under:
