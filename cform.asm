@@ -1,8 +1,8 @@
-;;		===================================
-;;		C - F O R M ( ASM )
-;;		ASM FORMATTING GUIDE
-;;		CG MOON / ELASTIC SOFTWORKS 2025
-;;      ===================================
+;;    ===================================
+;;    C - F O R M ( ASM )
+;;    ASM FORMATTING GUIDE
+;;    CG MOON / ELASTIC SOFTWORKS 2025
+;;    ===================================
 
 
 ;; 				     --- C-FORM ETHOS ---
@@ -22,9 +22,9 @@ _start:
 	;; code logic is separated into blocks by blank lines.
 	;; labels always start at column 0.
 
-	xor ax, ax		; SET AX TO ZERO
-	mov ds, ax		; INIT DATA SEG REGISTER
-	mov es, ax		; INIT EXTRA SEG REGISTER
+	xor ax, ax    ; SET AX TO ZERO
+	mov ds, ax    ; INIT DATA SEG REGISTER
+	mov es, ax    ; INIT EXTRA SEG REGISTER
 
 	;; instructions and directives are indented with one tab.
 	;; they are always lowercase.
@@ -36,10 +36,10 @@ load_kernel:
 	
 .retry_loop:
 
-	mov ah, 0x02		; BIOS READ SECTORS
-	mov al, 8			; NUMBERS OF SECTORS TO READ
-	mov ch, 0			; CYLINDER 0
-	mov cl, 2			; SECTOR 2
+	mov ah, 0x02  ; BIOS READ SECTORS
+	mov al, 8     ; NUMBERS OF SECTORS TO READ
+	mov ch, 0     ; CYLINDER 0
+	mov cl, 2     ; SECTOR 2
 	
 	;; single-line comments use a semicolon ';' and explain the
 	;; immediate purpose of an instruction or magic number.
@@ -64,12 +64,12 @@ load_kernel:
 
 print_string:
 	
-	lodsb					; MAKE SURE
-	or al, al				; THAT EACH INSTRUCTION
-	jz .done				; HAS A BRIEF COMMENT
-	mov ah, 0x0E			; THAT IS CORRECTLY ALIGNED
-	int 0x10				; ALL-CAPS FOR BRIEF COMMS
-	jmp print_string		; BOTTOM TEXT
+	lodsb              ; MAKE SURE
+	or al, al          ; THAT EACH INSTRUCTION
+	jz .done           ; HAS A BRIEF COMMENT
+	mov ah, 0x0E       ; THAT IS CORRECTLY ALIGNED
+	int 0x10           ; ALL-CAPS FOR BRIEF COMMS
+	jmp print_string   ; BOTTOM TEXT
 	
 .done:
 	
