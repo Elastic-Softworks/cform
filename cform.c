@@ -2,9 +2,15 @@
    ===================================
    C - F O R M  ( C )
    C FORMATTING GUIDE
-   CG MOON / ELASTIC SOFTWORKS 2025
+   ELASTIC SOFTWORKS 2025
    ===================================
 */
+
+/*
+ * SPDX-License-Identifier: ACSL-1.4 OR FAFOL-0.1 OR Hippocratic-3.0
+ * Multi-licensed under ACSL-1.4, FAFOL-0.1, and Hippocratic-3.0
+ * See LICENSE.txt for full license texts
+ */
 
 /*
 
