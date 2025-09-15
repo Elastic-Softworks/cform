@@ -30,8 +30,6 @@ C-FORM is a code formatting guide that treats source code as a low-level textboo
 
 ## License
 
-This project is licensed under the GNU General Public License v3.0 - see below for details:
-
 ```text
 This project is licensed under:
 - ANTI-CAPITALIST SOFTWARE LICENSE (v1.4)
