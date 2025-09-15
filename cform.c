@@ -1,10 +1,8 @@
-/* 		  ====================================
-
-                 C - F O R M  ( C )
-			           C FORMATTING GUIDE
-           CG MOON / ELASTIC SOFTWORKS 2025
-  
-        ====================================
+/* 	====================================
+    C - F O R M  ( C )
+    C FORMATTING GUIDE
+    CG MOON / ELASTIC SOFTWORKS 2025
+    ====================================
 */
 
 /*
@@ -30,11 +28,11 @@
 	==================================
 */
 
-#include <stdio.h>  		 /* STANDARD LIBRARIES FIRST                */
-#include <string.h>			 /* ASM-STYLE RIGHT ALIGNED COMMENTS        */
-#include "my_project.h"  /* PROJECT HEADERS LAST                    */
-#include "info.h"			   /* COMMENT BRACES VERTICALLY ALIGNED       */
-#include "braces.h"			 /* RIGHT-MOST BRACE DEFINES DOC EDGE       */
+#include <stdio.h>			/* STANDARD LIBRARIES FIRST */
+#include <string.h>		/* ASM-STYLE RIGHT ALIGNED COMMENTS */
+#include "my_project.h"	/* PROJECT HEADERS LAST */
+#include "info.h"			/* COMMENT BRACES VERTICALLY ALIGNED */
+#include "braces.h"		/* RIGHT-MOST BRACE DEFINES DOC EDGE */
 
 /* 
 	==================================
@@ -42,7 +40,7 @@
 	==================================
 */
 
-static int global_variable;  /* FILE-SCOPE/GLOBAL VARS HERE          */
+static int global_variable;  /* FILE-SCOPE/GLOBAL VARS HERE */
 
 /* 
 	==================================
@@ -68,26 +66,25 @@ static int global_variable;  /* FILE-SCOPE/GLOBAL VARS HERE          */
 
 void my_function(int parameter_one, char* parameter_two) {
 
-  /* braces open on a new line.                                        */
-  /* a blank line follows the opening brace for spacing.               */
+  /* braces open on a new line. */
+  /* a blank line follows the opening brace for spacing. */
   
-  int     local_variable;
+  int	 local_variable;
   
-  char* 	pointer_variable; 	  /* align variable declarations by type,
-							                     name, and semicolon for a clean,
-							                     tabular look.                       */
+  char*  pointer_variable; 	  /* align variable declarations by type,
+							         name, and semicolon for a clean,
+							         tabular look. */
 								 
-  float down_here;			  			/* for longer, lengthier, more
-								             			 conversational comment code, opt   
-								 								   for lower-case type and align 
-								             			 the comment braces accordingly      */ 
+  float  down_here;			  /* for longer, lengthier, more
+									 conversational comment code, opt   
+									 for lower-case type */
 
   local_variable   = 100;
-  pointer_variable = "C-FORM";   /* align assignments vertically       */
+  pointer_variable = "C-FORM";   /* align assignments vertically */
   bogus_variable   = 69420;
 
-  /* use two spaces after control flow keywords (if, for, while).      */
-  /* use spaces around all operators ( =, +, -, >, && ).               */
+  /* use two spaces after control flow keywords (if, for, while). */
+  /* use spaces around all operators ( =, +, -, >, && ). */
   
   if  (local_variable > 50 && parameter_one == 1) {
 
@@ -101,13 +98,13 @@ void my_function(int parameter_one, char* parameter_two) {
 
     /* use multi-line block comments for explanations.
        align them to the right of a code block to
-       describe the logic within (see above)       */
+       describe the logic within (see above) */
     
     strcpy(parameter_two, "Done.");
     
   }
 
-  /* a blank line precedes the closing brace.   */
+  /* a blank line precedes the closing brace. */
   
 }
 
