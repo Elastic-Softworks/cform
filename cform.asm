@@ -21,6 +21,7 @@ _start:
 	
 	;; code logic is separated into blocks by blank lines.
 	;; labels always start at column 0.
+
 	xor ax, ax		; SET AX TO ZERO
 	mov ds, ax		; INIT DATA SEG REGISTER
 	mov es, ax		; INIT EXTRA SEG REGISTER
