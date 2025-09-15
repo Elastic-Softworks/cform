@@ -48,8 +48,6 @@ static int global_variable;  /* FILE-SCOPE/GLOBAL VARS HERE */
 	==================================
 */
 
-/
-
 /*
 
          my_function()
