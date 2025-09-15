@@ -6,7 +6,7 @@ A comprehensive formatting and style guide for C and Assembly programming.
 
 C-FORM is a code formatting guide that treats source code as a low-level textbook. It emphasizes clarity, readability, and educational value in code formatting. The style is intentionally spacious to reduce cognitive load and make complex systems more approachable.
 
-## Key Features
+## Focal Points
 
 - **Educational Focus**: Comments are written in a conversational, easy-to-understand manner
 - **Clear Structure**: Consistent formatting rules for both C and Assembly code
