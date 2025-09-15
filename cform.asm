@@ -1,7 +1,7 @@
 ;;		 ====================================
 ;;
 ;;                C - F O R M ( ASM )
-;;			         ASM FORMATTING GUIDE
+;;			      ASM FORMATTING GUIDE
 ;;          CG MOON / ELASTIC SOFTWORKS 2025
 ;;  
 ;;      ====================================
@@ -39,9 +39,9 @@ load_kernel:
 .retry_loop:
 
 	mov ah, 0x02		; BIOS READ SECTORS
-	mov al, 8			  ; NUMBERS OF SECTORS TO READ
-	mov ch, 0			  ; CYLINDER 0
-	mov cl, 2			  ; SECTOR 2
+	mov al, 8			; NUMBERS OF SECTORS TO READ
+	mov ch, 0			; CYLINDER 0
+	mov cl, 2			; SECTOR 2
 	
 	;; single-line comments use a semicolon ';' and explain the
 	;; immediate purpose of an instruction or magic number.
@@ -66,12 +66,12 @@ load_kernel:
 
 print_string:
 	
-	lodsb				  	  ; MAKE SURE
-	or al, al				  ; THAT EACH INSTRUCTION
-	jz .done				  ; HAS A BRIEF COMMENT
+	lodsb				  ; MAKE SURE
+	or al, al		      ; THAT EACH INSTRUCTION
+	jz .done			  ; HAS A BRIEF COMMENT
 	mov ah, 0x0E		  ; THAT IS CORRECTLY ALIGNED
-	int 0x10				  ; ALL-CAPS FOR BRIEF COMMS
-	jmp print_string  ; BOTTOM TEXT
+	int 0x10			  ; ALL-CAPS FOR BRIEF COMMS
+	jmp print_string     ; BOTTOM TEXT
 	
 .done:
 	
